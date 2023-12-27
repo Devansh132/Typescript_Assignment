@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    background: linear-gradient(to right, violet, red); 
+    -webkit-background-clip: text;  /*Ensure background won't extend beyond the boundaries of the text characters*/
+    color: transparent; 
+    background-size: 200% 100%; 
+    animation: rainbowCycle 1s infinite linear;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); /* Rainbow gradient */
+    -webkit-background-clip: text; 
+    color: transparent;      /* Hide the original text */
+    background-size: 200% 100%; 
+    animation: rainbowCycle 1s infinite linear;
+}
+
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('/lol-yasuo-4k-gaming-lc3i8x6n4hjd2268.jpg'); /* Background image for parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+.hero-content{
+    font-size: larger;
+    position: relative;
+    z-index: 1;
+    padding-right: 750px;
+    background: linear-gradient(to right,yellow,white, violet, red); 
+    -webkit-background-clip: text; 
+    color: transparent; 
+    background-size: 200% 100%; 
+    animation: rainbowCycle 1s infinite linear;
+}
+
+@keyframes rainbowCycle {
+    0% {
+        background-position: 0% 100%; 
+    }
+    100% {
+        background-position: 100% 90%;
+    }
+}
+
+
+
+
+
+section {
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1c1c1c;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    background-image: url('/halo-5-4k-gaming-ui08u65n6grsvsa2.jpg'); /* Background image for parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); /* Rainbow gradient */
+    -webkit-background-clip: text; 
+    color: transparent; 
+    background-size: 200% 100%;
+    animation: rainbowCycle 1s infinite linear;
+}
+
+.game-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.game {
+    box-sizing: border-box;
+    background-color: rgba(44, 44, 44, 0.8); 
+    padding: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.game:hover {
+    transform: scale(1.05);
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.game:hover img {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+.loader-container {                /*Loader Style*/
+    color: #141414;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.loader-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
