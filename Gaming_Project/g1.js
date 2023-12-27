@@ -35,10 +35,10 @@ function submitForm(data) {
                     gameCardContentElement.classList.remove("hidden");
                 }
             }
-        }, 2000); 
+        }, 2000);
     } catch (error) {
         alert("Fill the form please..:", error);
-        hideLoader(); 
+        hideLoader();
     }
 }
 
@@ -49,11 +49,11 @@ function showLoader() {
 
     const loadingText = document.createElement("p");
     loadingText.innerText = "Loading...";
-    loadingText.classList.add("loader-text"); 
+    loadingText.classList.add("loader-text");
 
     loaderElement.appendChild(loadingText);
 
-    loaderElement.classList.add("loader-container"); 
+    loaderElement.classList.add("loader-container");
 
     document.body.appendChild(loaderElement);
 }

@@ -4,7 +4,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #141414;
     color: #fff;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
 }
 
 header {
@@ -13,10 +14,11 @@ header {
     text-align: center;
     font-size: 2em;
     font-weight: bold;
-    background: linear-gradient(to right, violet, red); 
-    -webkit-background-clip: text;  /*Ensure background won't extend beyond the boundaries of the text characters*/
-    color: transparent; 
-    background-size: 200% 100%; 
+    background: linear-gradient(to right, violet, red);
+    -webkit-background-clip: text;
+    /*Ensure background won't extend beyond the boundaries of the text characters*/
+    color: transparent;
+    background-size: 200% 100%;
     animation: rainbowCycle 1s infinite linear;
 }
 
@@ -39,10 +41,12 @@ nav a {
 }
 
 nav a:hover {
-    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); /* Rainbow gradient */
-    -webkit-background-clip: text; 
-    color: transparent;      /* Hide the original text */
-    background-size: 200% 100%; 
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    /* Rainbow gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+    /* Hide the original text */
+    background-size: 200% 100%;
     animation: rainbowCycle 1s infinite linear;
 }
 
@@ -54,7 +58,8 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('/lol-yasuo-4k-gaming-lc3i8x6n4hjd2268.jpg'); /* Background image for parallax effect */
+    background-image: url('/Gaming_Project/lol-yasuo-4k-gaming-lc3i8x6n4hjd2268.jpg');
+    /* Background image for parallax effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -62,22 +67,23 @@ nav a:hover {
     color: black;
 }
 
-.hero-content{
+.hero-content {
     font-size: larger;
     position: relative;
     z-index: 1;
     padding-right: 750px;
-    background: linear-gradient(to right,yellow,white, violet, red); 
-    -webkit-background-clip: text; 
-    color: transparent; 
-    background-size: 200% 100%; 
+    background: linear-gradient(to right, yellow, white, violet, red);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% 100%;
     animation: rainbowCycle 1s infinite linear;
 }
 
 @keyframes rainbowCycle {
     0% {
-        background-position: 0% 100%; 
+        background-position: 0% 100%;
     }
+
     100% {
         background-position: 100% 90%;
     }
@@ -95,7 +101,8 @@ section {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     overflow: hidden;
-    background-image: url('/halo-5-4k-gaming-ui08u65n6grsvsa2.jpg'); /* Background image for parallax effect */
+    background-image: url('/Gaming_Project/halo-5-4k-gaming-ui08u65n6grsvsa2.jpg');
+    /* Background image for parallax effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -103,9 +110,10 @@ section {
 }
 
 h2 {
-    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); /* Rainbow gradient */
-    -webkit-background-clip: text; 
-    color: transparent; 
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    /* Rainbow gradient */
+    -webkit-background-clip: text;
+    color: transparent;
     background-size: 200% 100%;
     animation: rainbowCycle 1s infinite linear;
 }
@@ -120,7 +128,7 @@ h2 {
 
 .game {
     box-sizing: border-box;
-    background-color: rgba(44, 44, 44, 0.8); 
+    background-color: rgba(44, 44, 44, 0.8);
     padding: 20px;
     border-radius: 15px;
     overflow: hidden;
@@ -155,7 +163,8 @@ footer {
 }
 
 
-.loader-container {                /*Loader Style*/
+.loader-container {
+    /*Loader Style*/
     color: #141414;
     position: fixed;
     top: 50%;
@@ -171,5 +180,3 @@ footer {
     font-size: 24px;
     font-weight: bold;
 }
-
-

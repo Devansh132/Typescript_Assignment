@@ -46,7 +46,7 @@ function submitForm(data: FormData): void {
       }
     }, 2000);
   } catch (error) {
-    alert("Fill the form please..:"+ error.message);
+    alert("Fill the form please..:" + error.message);
     hideLoader();
   }
 }
@@ -157,7 +157,7 @@ if (form) {
         alert("Please type 'yes' or 'no' for citizenship.");
       }
     } catch (error) {
-      alert("Fill the form"+ error.message);
+      alert("Fill the form" + error.message);
     }
   });
 }
